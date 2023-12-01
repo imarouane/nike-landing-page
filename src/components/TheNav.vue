@@ -1,16 +1,27 @@
 <script setup>
+import { ref } from "vue";
 import { headerLogo } from "@/assets/images";
-import { hamburger } from "@/assets/icons";
+import { hamburger, xHide } from "@/assets/icons";
 import { navLinks } from "@/constants";
+
+let isMenuOpen = ref(false);
+const toggleMenu = () => {
+  isMenuOpen.value = !isMenuOpen.value;
+};
 </script>
 <template>
   <header class="padding-x py-8 absolute z-10 w-full">
     <nav class="flex justify-between items-center gap-2 max-container">
       <a href="/"
-        ><img :src="headerLogo" alt="Nike Logo" width="130" height="29"
+        ><img :src="headerLogo" alt="Nike Logo" width="130" height="30"
       /></a>
-      <div class="flex-1 flex justify-center items-center max-lg:hidden max-lg:flex-col">
-        <ul class="flex justify-center items-center grow gap-16">
+      <div
+        class="flex-1 flex justify-center items-center gap-10 responsive-menu"
+        :class="{ 'max-lg:hidden': !isMenuOpen }"
+      >
+        <ul
+          class="flex justify-center items-center grow gap-12 max-lg:gap-8 max-lg:flex-col"
+        >
           <li v-for="link in navLinks" :key="link.label">
             <a
               :href="link.href"
@@ -22,13 +33,22 @@ import { navLinks } from "@/constants";
         <div
           class="flex justify-end items-center gap-1 text-lg text-slate-700 font-montserrat font-semibold"
         >
-          <a href="#">Sign In</a>
+          <a href="#" class="hover:text-slate-500 trabsition duration-200 ease-in-out">Sign In</a>
           <span>/</span>
-          <a href="#">Explore now</a>
+          <a href="#" class="hover:text-slate-500 trabsition duration-200 ease-in-out">Explore now</a>
         </div>
       </div>
-      <div class="hidden max-lg:block">
-        <img width="25" height="25" :src="hamburger" alt="icon">
+      <div
+        class="hidden max-lg:block cursor-pointer"
+        id="nav-hamburger"
+        @click="toggleMenu"
+      >
+        <div v-if="!isMenuOpen">
+          <img width="30" height="30" :src="hamburger" alt="icon" />
+        </div>
+        <div v-if="isMenuOpen">
+          <img width="30" height="30" :src="xHide" alt="icon" />
+        </div>
       </div>
     </nav>
   </header>
