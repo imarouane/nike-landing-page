@@ -10,7 +10,7 @@ const toggleMenu = () => {
 };
 </script>
 <template>
-  <header class="padding-x py-8 absolute z-10 w-full">
+  <header class="padding-x py-8 absolute z-20 w-full">
     <nav class="flex justify-between items-center gap-2 max-container">
       <a href="/"
         ><img :src="headerLogo" alt="Nike Logo" width="130" height="30"
