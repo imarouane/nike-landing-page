@@ -18,9 +18,12 @@ import TheNav from "@/components/TheNav.vue";
     <TheNav />
     <section
       id="home"
-      class="className='xl:padding-l wide:padding-r padding-b'"
+      class="xl:padding-l wide:padding-r padding-b"
     >
       <TheHero />
+    </section>
+    <section class="">
+
     </section>
   </main>
 </template>

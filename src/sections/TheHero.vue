@@ -4,9 +4,9 @@ import AppButton from "@/components/AppButton.vue";
 import ShoeCard from "@/components/ShoeCard.vue";
 import { arrowRight } from "@/assets/icons";
 import { statistics, shoes } from "../constants";
-import { bigShoe1 } from "../assets/images";
+import { bigShoe2 } from "../assets/images";
 
-let bigShoeHeroImg = ref(bigShoe1);
+let bigShoeHeroImg = ref(bigShoe2);
 const changeHeroImg = (newBigShoeImg) => {
   bigShoeHeroImg.value = newBigShoeImg;
 };
@@ -58,9 +58,7 @@ const changeHeroImg = (newBigShoeImg) => {
         height="502"
         class="relative z-10 object-contain"
       />
-      <div
-        class="absolute -bottom-[5%] flex gap-4 max-sm:px-6 sm:gap-6"
-      >
+      <div class="absolute -bottom-[5%] flex gap-4 max-sm:px-6 sm:gap-6">
         <ShoeCard
           v-for="(shoe, index) in shoes"
           :key="index"
