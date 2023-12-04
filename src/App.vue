@@ -14,12 +14,13 @@ import TheNav from "@/components/TheNav.vue";
 </script>
 
 <template>
-  <div>
+  <main class="relative">
     <TheNav />
-    <main class="relative">
-      <section class="xl:padding wide:padding-r padding-b">
-        <TheHero />
-      </section>
-    </main>
-  </div>
+    <section
+      id="home"
+      class="className='xl:padding-l wide:padding-r padding-b'"
+    >
+      <TheHero />
+    </section>
+  </main>
 </template>
