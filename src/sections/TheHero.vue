@@ -59,7 +59,7 @@ const changeHeroImg = (newBigShoeImg) => {
         class="relative z-10 object-contain"
       />
       <div
-        class="absolute -bottom-[5%] flex gap-4 max-sm:px-6 sm:left-[10%] sm:gap-6"
+        class="absolute -bottom-[5%] flex gap-4 max-sm:px-6 sm:gap-6"
       >
         <ShoeCard
           v-for="(shoe, index) in shoes"

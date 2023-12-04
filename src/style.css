@@ -23,7 +23,7 @@
   }
   
   .responsive-menu {
-    @apply max-lg:flex-col max-lg:absolute max-lg:gap-4 max-lg:top-20 max-lg:right-16 max-sm:right-8 max-lg:bg-gray-100 max-lg:p-10 max-lg:shadow-lg max-lg:rounded-sm z-30;
+    @apply max-lg:flex-col max-lg:absolute max-lg:gap-4 max-lg:top-20 max-lg:right-16 max-sm:right-8 max-lg:bg-[#eceeff] max-lg:p-10 max-lg:shadow-lg max-lg:rounded-sm z-30;
   }
 }
 
