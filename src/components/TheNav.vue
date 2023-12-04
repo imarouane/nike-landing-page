@@ -10,7 +10,7 @@ const toggleMenu = () => {
 };
 </script>
 <template>
-  <header class="padding-x py-8 absolute z-20 w-full">
+  <header class="padding-x py-8 absolute z-20 w-full max-lg:bg-white max-lg:shadow-sm">
     <nav class="flex justify-between items-center gap-2 max-container">
       <a href="/"
         ><img :src="headerLogo" alt="Nike Logo" width="130" height="30"
@@ -31,7 +31,7 @@ const toggleMenu = () => {
           </li>
         </ul>
         <div
-          class="flex justify-end items-center gap-1 text-lg text-slate-700 font-montserrat font-semibold"
+          class="flex justify-end items-center gap-1 text-lg text-slate-700 font-montserrat font-semibold xl:pr-20"
         >
           <a href="#" class="hover:text-slate-500 trabsition duration-200 ease-in-out">Sign In</a>
           <span>/</span>
