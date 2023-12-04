@@ -16,14 +16,14 @@ import TheNav from "@/components/TheNav.vue";
 <template>
   <main class="relative">
     <TheNav />
-    <section
-      id="home"
-      class="xl:padding-l wide:padding-r padding-b"
-    >
+    <section id="home" class="xl:padding-l wide:padding-r padding-b">
       <TheHero />
     </section>
-    <section class="">
-
+    <section
+      id="products"
+      class="xl:padding-l wide:padding-r padding-bmax-conatiner max-sm:mt-12"
+    >
+      <PopularProducts />
     </section>
   </main>
 </template>

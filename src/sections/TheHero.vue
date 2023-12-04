@@ -56,20 +56,15 @@ const changeHeroImg = (newBigShoeImg) => {
         alt="Shoe Collection"
         width="610"
         height="502"
-        class="relative z-10 object-contain"
+        class="relative z-10 -rotate-[24deg] object-contain"
       />
       <div class="absolute -bottom-[5%] flex gap-4 max-sm:px-6 sm:gap-6">
         <ShoeCard
           v-for="(shoe, index) in shoes"
           :key="index"
           :imgUrl="shoe"
-          :bigShoeImg="bigShoeHeroImg"
           @changeBigImg="changeHeroImg"
-          :class="[
-            shoe.bigShoe === bigShoeHeroImg
-              ? 'border-coral-red-600'
-              : 'border-transparent',
-          ]"
+          :selected="shoe.bigShoe === bigShoeHeroImg"
         />
       </div>
     </div>

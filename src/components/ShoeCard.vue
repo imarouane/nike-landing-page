@@ -5,9 +5,9 @@ let props = defineProps({
     type: Object,
     required: true,
   },
-  bigShoeImg: {
-    type: String,
-    required: true,
+  selected: {
+    type: Boolean,
+    default: false,
   },
 });
 const emit = defineEmits();
@@ -19,6 +19,7 @@ const selectShoe = () => {
 <template>
   <div
     class="cursor-pointer rounded-xl border-2 max-sm:flex-1"
+    :class="{ 'border-coral-red-600': selected }"
     @click="selectShoe"
   >
     <div
@@ -27,9 +28,9 @@ const selectShoe = () => {
       <img
         :src="props.imgUrl.thumbnail"
         alt="Shoe Collection"
-        width="127"
-        height="103"
-        class="object-contain"
+        width="150"
+        height="126"
+        class="-rotate-[12deg] object-contain"
       />
     </div>
   </div>
