@@ -13,10 +13,10 @@ const changeHeroImg = (newBigShoeImg) => {
 </script>
 <template>
   <div
-    class="max-container flex min-h-screen w-full flex-col justify-center gap-10 xl:flex-row"
+    class="max-container relative flex min-h-screen w-full flex-col justify-center gap-10 xl:flex-row"
   >
     <div
-      class="max-xl:paddig-x padding-l relative flex w-full flex-col items-start justify-center pt-28 xl:w-2/5"
+      class="max-xl:paddig-x padding-l relative flex w-full flex-col items-start justify-center pt-28 max-xl:pt-40 xl:w-2/5"
     >
       <p class="font-montserrat text-xl text-coral-red-600">
         Our Summer Collections
@@ -49,15 +49,17 @@ const changeHeroImg = (newBigShoeImg) => {
       </div>
     </div>
     <div
-      class="relative flex flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen"
+      class="relative flex min-h-[80vh] flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen"
     >
-      <img
-        :src="bigShoeHeroImg"
-        alt="Shoe Collection"
-        width="610"
-        height="502"
-        class="relative z-10 -rotate-[24deg] object-contain"
-      />
+      <div class="absolute overflow-hidden max-xl:pb-20">
+        <img
+          :src="bigShoeHeroImg"
+          alt="Shoe Collection"
+          width="610"
+          height="502"
+          class="z-10 -rotate-[24deg] object-contain"
+        />
+      </div>
       <div class="absolute -bottom-[5%] flex gap-4 max-sm:px-6 sm:gap-6">
         <ShoeCard
           v-for="(shoe, index) in shoes"
