@@ -19,14 +19,14 @@ import TheNav from "@/components/TheNav.vue";
     <section id="home" class="padding-b">
       <TheHero />
     </section>
-    <section
-      id="products"
-      class="padding max-sm:mt-12"
-    >
+    <section id="products" class="padding max-sm:mt-12">
       <PopularProducts />
     </section>
     <section id="about-us" class="padding">
       <SuperQuality />
+    </section>
+    <section class="padding-x py-10">
+      <TheServices />
     </section>
   </main>
 </template>

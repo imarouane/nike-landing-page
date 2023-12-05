@@ -1,5 +1,13 @@
-<template></template>
-
-<script></script>
-
-<style></style>
+<script setup>
+import { services } from "@/constants";
+import ServiceCard from "@/components/ServiceCard.vue";
+</script>
+<template>
+  <div class="max-container flex flex-wrap justify-center gap-9">
+    <ServiceCard
+      v-for="service in services"
+      :key="service.label"
+      :service="service"
+    />
+  </div>
+</template>
