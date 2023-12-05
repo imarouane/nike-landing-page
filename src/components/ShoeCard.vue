@@ -19,7 +19,7 @@ const selectShoe = () => {
 <template>
   <div
     class="cursor-pointer rounded-xl border-2 max-sm:flex-1"
-    :class="{ 'border-coral-red-600': selected }"
+    :class="[selected ? 'border-coral-red-600' : 'border-transparent']"
     @click="selectShoe"
   >
     <div
