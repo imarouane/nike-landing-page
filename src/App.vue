@@ -6,7 +6,7 @@ import {
   TheServices,
   SpecialOffer,
   CustomerReviews,
-  TheSubscriber,
+  TheSubscribe,
   TheFooter,
 } from "@/sections";
 
@@ -31,6 +31,11 @@ import TheNav from "@/components/TheNav.vue";
     <section class="padding">
       <SpecialOffer />
     </section>
-    
+    <section class="padding bg-pale-blue">
+      <CustomerReviews />
+    </section>
+    <section class="padding-x w-full py-16 sm:py-32">
+      <TheSubscribe />
+    </section>
   </main>
 </template>

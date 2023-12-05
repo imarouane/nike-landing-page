@@ -1,5 +1,4 @@
-<template></template>
-
-<script></script>
-
-<style></style>
+<script setup></script>
+<template>
+  <div class="max-container"></div>
+</template>
