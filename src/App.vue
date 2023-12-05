@@ -25,5 +25,8 @@ import TheNav from "@/components/TheNav.vue";
     >
       <PopularProducts />
     </section>
+    <section id="about-us" class="padding">
+      <SuperQuality />
+    </section>
   </main>
 </template>
