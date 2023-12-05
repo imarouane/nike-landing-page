@@ -28,5 +28,9 @@ import TheNav from "@/components/TheNav.vue";
     <section class="padding-x py-10">
       <TheServices />
     </section>
+    <section class="padding">
+      <SpecialOffer />
+    </section>
+    
   </main>
 </template>

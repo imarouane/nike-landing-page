@@ -9,12 +9,26 @@ const props = defineProps({
     type: String,
     required: true,
   },
+  bgColor: {
+    type: String,
+  },
+  borderColor: {
+    type: String,
+  },
+  textColor: {
+    type: String,
+  },
 });
 </script>
 
 <template>
   <button
-    class="group flex items-center justify-center gap-2 rounded-full border border-coral-red bg-coral-red px-7 py-4 font-montserrat text-lg leading-none text-white hover:bg-coral-red-500"
+    class="leading-non group flex items-center justify-center gap-2 rounded-full border px-7 py-4 font-montserrat text-lg"
+    :class="[
+      bgColor
+        ? `${bgColor} ${borderColor} ${textColor}`
+        : 'border-coral-red bg-coral-red text-white hover:bg-coral-red-500',
+    ]"
   >
     {{ props.label }}
     <img
