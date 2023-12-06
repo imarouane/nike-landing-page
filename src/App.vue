@@ -37,5 +37,8 @@ import TheNav from "@/components/TheNav.vue";
     <section id="contact-us" class="padding-x w-full py-16 sm:py-32">
       <TheSubscribe />
     </section>
+    <footer class="padding-x padding-t bg-black pb-8">
+      <TheFooter />
+    </footer>
   </main>
 </template>
