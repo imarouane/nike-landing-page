@@ -4,7 +4,7 @@ import { shoe8 } from "../assets/images";
 </script>
 <template>
   <div
-    class="max-conatiner flex w-full items-center justify-between gap-10 max-lg:flex-col"
+    class="max-container flex w-full items-center justify-between gap-10 max-lg:flex-col"
   >
     <div class="flex flex-1 flex-col">
       <h2 class="font-palanquin text-4xl font-bold capitalize lg:max-w-lg">

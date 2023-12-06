@@ -34,7 +34,7 @@ import TheNav from "@/components/TheNav.vue";
     <section class="padding bg-pale-blue">
       <CustomerReviews />
     </section>
-    <section class="padding-x w-full py-16 sm:py-32">
+    <section id="contact-us" class="padding-x w-full py-16 sm:py-32">
       <TheSubscribe />
     </section>
   </main>
