@@ -8,7 +8,7 @@ import { offer } from "@/assets/images";
   <div
     class="max-conatiner flex w-full items-center justify-between gap-10 max-lg:flex-col-reverse"
   >
-    <figure class="flex-1">
+    <figure class="flex-1" v-motion-slide-visible-once-left>
       <img
         :src="offer"
         alt="super quality shoe"
@@ -17,7 +17,7 @@ import { offer } from "@/assets/images";
         class="object-contain"
       />
     </figure>
-    <div class="flex flex-1 flex-col">
+    <div class="flex flex-1 flex-col" v-motion-slide-visible-once-right>
       <h2 class="font-palanquin text-4xl font-bold capitalize lg:max-w-lg">
         <span class="text-coral-red-600">Special </span>
         Offer

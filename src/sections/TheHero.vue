@@ -51,7 +51,18 @@ const changeHeroImg = (newBigShoeImg) => {
     <div
       class="relative flex min-h-[80vh] flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen"
     >
-      <div class="absolute overflow-hidden max-xl:pb-20">
+      <div
+        class="absolute overflow-hidden max-xl:pb-20"
+        v-motion
+        :initial="{ opacity: 0.5, x: 600 }"
+        :enter="{
+          opacity: 1,
+          x: 0,
+          transition: {
+            duration: 500,
+          },
+        }"
+      >
         <img
           :src="bigShoeHeroImg"
           alt="Shoe Collection"

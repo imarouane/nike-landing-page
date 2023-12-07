@@ -16,6 +16,7 @@ import ReviewCard from "@/components/ReviewCard.vue";
     </div>
     <div
       class="mt-24 flex flex-1 items-center justify-evenly gap-14 max-lg:flex-col"
+      v-motion-slide-visible-once-bottom
     >
       <ReviewCard
         v-for="review in reviews"

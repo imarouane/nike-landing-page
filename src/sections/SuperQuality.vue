@@ -4,9 +4,9 @@ import { shoe8 } from "../assets/images";
 </script>
 <template>
   <div
-    class="max-container flex w-full items-center justify-between gap-10 max-lg:flex-col"
+    class="max-container flex w-full items-center justify-between gap-10 max-lg:flex-col overflow-hidden"
   >
-    <div class="flex flex-1 flex-col">
+    <div class="flex flex-1 flex-col" v-motion-slide-visible-once-left>
       <h2 class="font-palanquin text-4xl font-bold capitalize lg:max-w-lg">
         We Provide You
         <span class="text-coral-red-600">Super </span>
@@ -25,7 +25,7 @@ import { shoe8 } from "../assets/images";
         <AppButton label="View Details" />
       </div>
     </div>
-    <figure class="flex flex-1 items-center justify-center">
+    <figure class="flex flex-1 items-center justify-center" v-motion-slide-visible-once-right>
       <img
         :src="shoe8"
         alt="super quality shoe"

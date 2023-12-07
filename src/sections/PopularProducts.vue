@@ -16,6 +16,7 @@ import PoplarProductCard from "@/components/PoplarProductCard.vue";
     </div>
     <div
       class="mt-16 grid grid-cols-1 gap-14 sm:grid-cols-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4"
+      v-motion-slide-visible-once-bottom
     >
       <PoplarProductCard
         v-for="product in products"

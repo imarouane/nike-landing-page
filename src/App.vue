@@ -14,7 +14,7 @@ import TheNav from "@/components/TheNav.vue";
 </script>
 
 <template>
-  <main class="relative">
+  <main class="relative overflow-hidden">
     <TheNav />
     <section id="home" class="padding-b">
       <TheHero />
